@@ -1,0 +1,119 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    background-image: url("/src/assets/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.imagens img{
+    width: 50vh;
+    
+}
+
+.logoE{
+    position: fixed;
+    bottom: 20vh;
+    left: 0px;
+}
+
+.logoD{
+    position: fixed;
+    top: 20vh;
+    right: 0;
+
+
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-10px);
+    }
+}
+
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  p {
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    font-weight: 900;
+    color: #fff;
+    opacity: 1;
+    animation: float 2s ease-in-out infinite;
+
+  }
+  .dot {
+    background-color: #1B1F2A;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    color: red;
+    z-index: 9;
+    overflow: hidden;
+  } 
+  .dot::-webkit-scrollbar{
+    display: none
+  }
+
+#title{
+    margin: 0;
+    text-align: center;
+    color: #1B1F2A;
+    font-size: 7vh;
+    font-weight: 800;
+}
+
+.desc{
+    font-size: 5vh;
+    font-style: italic;
+    font-weight: 200;
+    color: #3D3C3C;
+}
+strong{
+   color: #78348A;
+}
+.seta{
+    position:absolute;
+    bottom: 5vh;
+    background-color: #1B1F2A;
+    padding: 20px;
+    border-radius: 50%;
+    animation: float 2s ease-in-out infinite;
+    color: #ffff;
+
+    transform: translateX(60deg);
+}
