@@ -66,7 +66,8 @@ function Home() {
           y: 0,
           ease: "power3.in",
           scale: 1,
-          borderRadius: "0"
+          borderRadius: "0",
+          overflowY: "scroll"
         }
       );
 
@@ -119,6 +120,8 @@ function Home() {
     } , elemento)
 
 
+    
+
 
   return (
     <section id="section" ref={sectionRef}>
@@ -134,21 +137,60 @@ function Home() {
             <img id="img2" className="logoD imgs" src={logoD} alt="" />
         </div>
 
-        <div>
-            <p id="title" >
-            Bem Vindo  a <strong > Web Fusion  <span>!</span> </strong>
-            </p>
+        <div className="titulo">
+            <p id="title" >Bem Vindo  a <strong > Web Fusion  <span>!</span> </strong></p>
             <p className="desc">e preparese para ver um novo conceito de site moderno</p>
         </div>
         
       </div>
      
       <div className="dot" ref={dotRef}>
+        <div className="servicos">
+          
+          <div className="servicosDentro">
+          <h1>A solução ideal para <strong> o seu serviço</strong></h1>
+
+          <ul className="card">
+            <li>
+              <h3>SITE <strong>INSTITUCIONAL</strong> </h3>
+              <p>Um site completo para melhorar o posicionamento digital da sua empresa, do zero ou adaptando o seu atual.
+              </p>
+            </li>
+
+            <li>
+              <h3>LANDING <strong>PAGE</strong> </h3>
+              <p>Uma única página com foco em conversão direta. Ideal para quem está no começo ou tem apenas 1 serviço ou produto.
+              </p>
+            </li>
+
+            <li>
+              <h3> <strong>LANÇAMENTOS</strong> </h3>
+              <p>Todas as páginas que você precisar para o seu lançamento e/ou campanhas de marketing.
+              </p>
+            </li>
+          </ul>
+
+
+          </div>
+          
+
+        <div className="performace">
+          texto
+        </div>
+
         <div className="teste">
-            <h1>dentro da div</h1>
+          <h1>testesteste ste</h1>
+        </div>
 
         </div>
+
+        
+
+
+        
       </div>
+
+      
 
 
         <div className="seta">
