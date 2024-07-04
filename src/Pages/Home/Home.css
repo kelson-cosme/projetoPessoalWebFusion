@@ -1,4 +1,4 @@
-  
+/*   
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
@@ -72,7 +72,7 @@ body{
     position: absolute;
     z-index: 9;
 
-    /* overflow-y: scroll; */
+    /* overflow-y: scroll; 
 
   } 
   .dot::-webkit-scrollbar{
@@ -89,7 +89,7 @@ body{
   animation: float 2s ease-in-out infinite;
 
 
-  }
+  } 
 /* p {
   font-size: 100px;
   text-align: center;
@@ -101,7 +101,7 @@ body{
   animation: float 2s ease-in-out infinite;
 
 } */
-.desc{
+/* .desc{
   position: relative;
   font-size: 5vh;
     font-style: italic;
@@ -181,11 +181,11 @@ strong{
   top: 0;
 
 
-}
+} */
 
 /* ------------------------------- */
 /* Efeito Zoom */
-
+/* 
 .zoomI {
   top: 0;
   height: 100vh;
@@ -231,15 +231,15 @@ h1 {
   background-position: center;
 }
 
+ */
 
 
 
 
-
-.teste{
+/* .teste{
   top: 0;
   max-width: 1366px;
   margin: auto;
   width: 100%;
   background-color: red;
-}
+} */
