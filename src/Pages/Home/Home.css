@@ -31,8 +31,11 @@
 }
 .apresentacao{
   animation: float 2s ease-in-out infinite;
-
+  text-shadow: 0.1em 0.1em 0.2em rgb(102, 99, 99)
 }
+
+
+
 .apresentacao h1{
   font-size: 6vh;
 }
@@ -50,7 +53,21 @@ strong{
 		transform:translatey(-10px);
     }
 }
+.circ{
+  position: absolute;
+  background-color: #1B1F2A;
+  bottom: 0;
+  border-radius: 50%;
+  width: 5vh;
+  padding: 3vh;
 
+  animation: float .5s ease-in-out infinite;
+
+
+}
+.circ img{
+  width: 100%;
+}
 
 .logo{
   top: 0;
@@ -59,6 +76,7 @@ strong{
 .logo img{
   width: 55vh;
   position: absolute;
+
 
 }
 #logoE{
@@ -78,6 +96,7 @@ strong{
   background-color: #1B1F2A;
   /* clip-path: circle(100% at 50% 5%); */
   clip-path: circle(5% at 50% 8.5%);
+
 
   position: sticky;
   top: 0;
@@ -169,8 +188,36 @@ strong{
 
 
 
-@media screen and (max-width: 800px){
-  .rigth{
-    width: 50%;
+@media screen and (max-width: 767px){
+  .apresentacao{
+    z-index: 9;
+    color: #ffff;
+    text-shadow: 0.1em 0.1em 0.2em rgb(58, 54, 54)
+
   }
+  strong{
+    text-shadow: 0.1em 0.1em 0.2em rgba(88, 88, 88, 0.384)
+
+  }
+  .rigth{
+    width: 48%;
+  }
+  .card h1{
+    font-size: 4vh;
+  }
+  .card li{
+    width: 80%;
+    padding: 3vh;
+  }
+  #logoE{
+    top: 30vh;
+    left: -10vh;
+    filter: brightness(0.8)
+  }
+  #logoD{
+    bottom: 30vh;
+    right: -10vh;
+    filter: brightness(0.7)
+  }
+  
 }

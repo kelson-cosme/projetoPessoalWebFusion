@@ -7,6 +7,7 @@ import "./Home.css"
 
 import logod from "../../assets/logoD.png"
 import logoe from "../../assets/logoE.png"
+import seta from "../../assets/seta.png"
 
 function Home(){
 
@@ -68,7 +69,7 @@ function Home(){
         }
       }).fromTo("#sectionTwo", {
         
-        y: "-10vh"
+        y: "0"
       },{
         clipPath: "circle(150% at 50% 15%)",
         y: "0"
@@ -140,20 +141,27 @@ function Home(){
         <div className="apresentacao">
           <h1>Bem Vindo a <strong>Web Fusion</strong> </h1>
           <p>e prepare-se para ver um novo conceito de site moderno !</p>
+        
+          
         </div>
-
+  
         <div ref={elemento3} className="logo">
           <div  className="logos">
             <img src={logoe} id="logoE" alt="" />
             <img src={logod} id="logoD" alt="" />
           </div>
           
+          
         </div>
+        <div className="circ"> 
+            <img src={seta} alt="" />
+          </div>
       </section>
       
       <section ref={elemento} className="section two" id="sectionTwo" >
 
         <div className="card">
+
           <h1>A Solução ideal para <strong>o seu Serviço</strong> </h1>
 
           <ul>
