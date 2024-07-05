@@ -1,6 +1,11 @@
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
-import { useRef, useLayoutEffect } from "react"
+import { useRef, useLayoutEffect, useEffect } from "react"
+
+// Efeitos sumir
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 
 import "./Home.css"
 
@@ -10,8 +15,13 @@ import logoe from "../../assets/logoE.png"
 import seta from "../../assets/seta.png"
 
 function Home(){
+//AOS
+  useEffect( () => {
+    AOS.init();
+}, [])
 
-  //Efeito desaparecer imagens
+
+  //Efeito desaparecer imagens GSASP
   const timiline3 = useRef()
   const elemento3 = useRef()
 
@@ -138,16 +148,14 @@ function Home(){
   return(
     <div className="preencher">
       <section className="section one">
-        <div className="apresentacao">
-          <h1>Bem Vindo a <strong>Web Fusion</strong> </h1>
-          <p>e prepare-se para ver um novo conceito de site moderno !</p>
-        
-          
+        <div  className="apresentacao">
+          <h1 data-aos="flip-left" data-aos-duration="1000">Bem Vindo a <strong>Web Fusion</strong> </h1>
+          <p data-aos="flip-left" data-aos-duration="1000">e prepare-se para ver um novo conceito de site moderno !</p>
         </div>
   
         <div ref={elemento3} className="logo">
           <div  className="logos">
-            <img src={logoe} id="logoE" alt="" />
+            <img  src={logoe} id="logoE" alt="" />
             <img src={logod} id="logoD" alt="" />
           </div>
           
@@ -162,20 +170,20 @@ function Home(){
 
         <div className="card">
 
-          <h1>A Solução ideal para <strong>o seu Serviço</strong> </h1>
+          <h1 data-aos="fade-down">A Solução ideal para <strong>o seu Serviço</strong> </h1>
 
           <ul>
-            <li>
+            <li data-aos="fade-up-right" data-aos-duration="1000"> 
               <h2>SITE <strong>INSTITUCIONAL</strong> </h2>
               <p>Um site completo para melhorar o posicionamento digital da sua empresa, do zero ou adaptando o seu atual.</p>
             </li>
 
-            <li>
+            <li data-aos="fade-up-left" data-aos-duration="1000">
               <h2>LANDING <strong>PAGE</strong> </h2>
               <p>Uma única página com foco em conversão direta. Ideal para quem está no começo ou tem apenas 1 serviço ou produto.</p>
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1000">
               <h2><strong>LANÇAMENTOS</strong></h2>
               <p>Todas as páginas que você precisar para o seu lançamento e/ou campanhas de marketing.</p>
             </li>
@@ -186,15 +194,15 @@ function Home(){
       <section className="section tree">
 
         <div className="left">
-          <section id="left1" className="lefts left1">
+          <section data-aos="flip-right" id="left1" className="lefts left1">
             left1
           </section>
 
-          <section id="left2" className="lefts left2">
+          <section data-aos="flip-left" id="left2" className="lefts left2">
           left2
           </section>
 
-          <section id="left3" className="lefts left3">
+          <section data-aos="flip-right" id="left3" className="lefts left3">
           left3
           </section>
         </div>
