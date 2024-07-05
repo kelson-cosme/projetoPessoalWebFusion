@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 *{
@@ -100,10 +100,13 @@ strong{
 }
 
 
-/* ----------------------------- */
-/* Efeito Zoom */
 
-
+.zoom{
+  background-color: red;
+  height: auto;
+  position: sticky;
+  top: 0;
+}
 .performace{
   margin: 0;
   width: 100%;
@@ -141,4 +144,4 @@ strong{
   background-image: url(https://www.voicesofyouth.org/sites/voy/files/images/2020-08/finding-sunshine.jpg);
   background-size: cover;
   background-position: center;
-}
+} */

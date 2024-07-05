@@ -1,41 +1,47 @@
-/*   
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 
 }
+.section{
+  width: 100%;
+  height: 100vh;
+  /* background-color: #5a5a5a; */
 
-body{
-    background-image: url("/src/assets/fundo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  color: black;
 }
+.one{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  text-align: center;
 
+  background-image: url("../../assets/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.imagens img{
-    width: 50vh;
-    
+  overflow: hidden;
 }
-
-.logoE{
-    position: fixed;
-    bottom: 20vh;
-    left: 0px;
-}
-
-.logoD{
-    position: fixed;
-    top: 20vh;
-    right: 0;
-
+.apresentacao{
+  animation: float 2s ease-in-out infinite;
 
 }
-
+.apresentacao h1{
+  font-size: 6vh;
+}
+.apresentacao p{
+  font-size: 3vh;
+}
+strong{
+  color: #78348A;
+}
 @keyframes float{
 	0%,100%{
 		transform:translatey(0)
@@ -46,200 +52,117 @@ body{
 }
 
 
-#section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imagem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-
-  .dot {
-    background-color: #1B1F2A;
-    height: auto;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 9;
-
-    /* overflow-y: scroll; 
-
-  } 
-  .dot::-webkit-scrollbar{
-    display: none
-  }
-
-#title{
-    margin: 0;
-    text-align: center;
-    color: #1B1F2A;
-    font-size: 7vh;
-    font-weight: 800;
-    position: relative;
-  animation: float 2s ease-in-out infinite;
-
-
-  } 
-/* p {
-  font-size: 100px;
-  text-align: center;
-  position: relative;
-  left: 0;
-  font-weight: 900;
-  color: #fff;
-  opacity: 1;
-  animation: float 2s ease-in-out infinite;
-
-} */
-/* .desc{
-  position: relative;
-  font-size: 5vh;
-    font-style: italic;
-    font-weight: 200;
-    color: #3D3C3C;
-  animation: float 2s ease-in-out infinite;
-
-}
-strong{
-   color: #78348A;
-}
-.seta{
-    position:absolute;
-    bottom: 5vh;
-    background-color: #1B1F2A;
-    padding: 20px;
-    border-radius: 50%;
-    animation: float 2s ease-in-out infinite;
-    color: #ffff;
-
-    transform: translateX(60deg);
-}
-
-
-.servicos{
-  color: #ffff;
-  max-width: 1366px;
-  margin: auto;
+.logo{
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+}
+.logo img{
+  width: 55vh;
+  position: absolute;
 
 }
-.servicosDentro h1 {
-  text-align: center;
-
-  margin: 10vh 0 0 0 ;
-
-  font-size: 6vh;
+#logoE{
+  top: 39vh;
+  position: absolute;
+  left: 0;
 }
-.card{
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+#logoD{
+  bottom: 39vh;
+  position: absolute;
+  right: 0;
 }
-.servicosDentro{
+
+
+
+.two{
+  background-color: #1B1F2A;
+  /* clip-path: circle(100% at 50% 5%); */
+  clip-path: circle(5% at 50% 8.5%);
+
   position: sticky;
   top: 0;
-  height: 100vh;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+
 }
-.servicosDentro h1{
-  margin-bottom: 7vh;
+.card{
+}
+.card h1{
+  font-size: 6vh;
+  color: #fff;
+  text-align: center;
+
+}
+.card ul{
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 .card li{
   background-color: #D9D9D9;
-  color: #1B1F2A;
-  padding: 20px;
-  border-radius: 23px;
-  margin: 0 20px 20px 20px;
+  width: 35%;
+  padding: 5vh;
+  border-radius: 25px;
+  margin: 2vh;
 }
 
-.performace{
-  width: 100%;
+
+
+
+/* ------------------ */
+/* zoom */
+.tree{
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  background-color: #1B1F2A;
+  position: sticky;
+  top: 0;
+}
+.left{
+  width: 50%;
+  height: auto;
+  background-color: #1B1F2A;
+
+}
+.left section{
+  height: 100vh;
+
   position: sticky;
   top: 0;
 
+}
+.left1{
+  background-color:cornflowerblue;
+}
+.left2{
+  background-color: gray;
+}
+.left3{
+  background-color: chocolate;
+}
+.rigth{
 
-} */
-
-/* ------------------------------- */
-/* Efeito Zoom */
-/* 
-.zoomI {
-  top: 0;
-  height: 100vh;
-  border-bottom: 1px solid #636363;
-  width: 58%;
-  position: relative;
-}
-.blue{
-  background-color: blue;
-}
-.green{
-  background-color: green;
-}
-.white{
-  background-color: rgb(46, 1, 1);
-}
-.yellow{
-  background-color: yellow;
-}
-
-h1 {
-  top: 30px;
-  line-height: 1;
-  font-family: sans-serif;
-  color: #fff;
-  margin: 0 0 0 20px;
-}
-.right-side {
   width: 40%;
-  float:right ;
-  background: #333;
   height: 100vh;
+  position: sticky;
+  top: 0;
+
   overflow: hidden;
 
-  position: sticky;
-  top: 0;
 }
-.photo {
+.foto{
   width: 100%;
   height: 100%;
   background-image: url(https://www.voicesofyouth.org/sites/voy/files/images/2020-08/finding-sunshine.jpg);
   background-size: cover;
   background-position: center;
-}
-
- */
-
-
-
-
-/* .teste{
-  top: 0;
-  max-width: 1366px;
-  margin: auto;
-  width: 100%;
-  background-color: red;
-} */
+  /* transform: scale(1.5); */
+  transform-origin: 100% 0% ;
+} 
