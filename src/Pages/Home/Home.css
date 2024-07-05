@@ -88,8 +88,7 @@ strong{
   align-items: center;
 
 }
-.card{
-}
+
 .card h1{
   font-size: 6vh;
   color: #fff;
@@ -120,7 +119,7 @@ strong{
 .tree{
   display: flex;
   height: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #1B1F2A;
   position: sticky;
   top: 0;
@@ -166,3 +165,12 @@ strong{
   /* transform: scale(1.5); */
   transform-origin: 100% 0% ;
 } 
+
+
+
+
+@media screen and (max-width: 767px){
+  .rigth{
+    width: 50%;
+  }
+}
