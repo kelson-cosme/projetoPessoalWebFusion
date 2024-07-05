@@ -149,8 +149,8 @@ function Home(){
     <div className="preencher">
       <section className="section one">
         <div  className="apresentacao">
-          <h1 data-aos="flip-left" data-aos-duration="1000">Bem Vindo a <strong>Web Fusion</strong> </h1>
-          <p data-aos="flip-left" data-aos-duration="1000">e prepare-se para ver um novo conceito de site moderno !</p>
+          <h1 >Bem Vindo a <strong>Web Fusion</strong> </h1>
+          <p >e prepare-se para ver um novo conceito de site moderno !</p>
         </div>
   
         <div ref={elemento3} className="logo">
