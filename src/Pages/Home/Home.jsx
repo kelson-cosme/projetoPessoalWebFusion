@@ -14,6 +14,9 @@ import logod from "../../assets/logoD.png"
 import logoe from "../../assets/logoE.png"
 import seta from "../../assets/seta.png"
 
+import figma from "../../assets/figma.png"
+
+
 function Home(){
 //AOS
   useEffect( () => {
@@ -119,7 +122,7 @@ function Home(){
         transform: "scale(1.0)"
 
       },{
-        transform: "scale(3.5)",
+        transform: "scale(2.0)",
         transformOrigin: "0% 100%"
 
       }).fromTo(".foto", {
@@ -195,15 +198,37 @@ function Home(){
 
         <div className="left">
           <section data-aos="flip-right" id="left1" className="lefts left1">
-            left1
+            <div className="tecnologia">
+              <h1>DESIGN INDIVIDUAL</h1>
+              <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
+            </div>
+
+            <div className="tecnologiaImg">
+              <img src={figma} alt="" />
+            </div>
+
           </section>
 
           <section data-aos="flip-left" id="left2" className="lefts left2">
-          left2
+          <div className="tecnologia">
+              <h1>DESIGN INDIVIDUAL</h1>
+              <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
+            </div>
+
+            <div className="tecnologiaImg">
+              <img src={figma} alt="" />
+            </div>
           </section>
 
           <section data-aos="flip-right" id="left3" className="lefts left3">
-          left3
+          <div className="tecnologia">
+              <h1>DESIGN INDIVIDUAL</h1>
+              <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
+            </div>
+
+            <div className="tecnologiaImg">
+              <img src={figma} alt="" />
+            </div>
           </section>
         </div>
 
@@ -213,6 +238,11 @@ function Home(){
           </div>
         </div>
       </section>
+
+
+
+
+      
 
     </div>
   )
