@@ -15,7 +15,8 @@ import logoe from "../../assets/logoE.png"
 import seta from "../../assets/seta.png"
 
 import figma from "../../assets/figma.png"
-
+import cod from "../../assets/cod.png"
+import acompanhar from "../../assets/acompanhar.png"
 
 function Home(){
 //AOS
@@ -117,26 +118,24 @@ function Home(){
           
         }
       }).fromTo(".foto",{
-        opacity: 1,
-        y: 0,
         transform: "scale(1.0)"
 
       },{
-        transform: "scale(2.0)",
+        transform: "scale(3.0)",
         transformOrigin: "0% 100%"
 
       }).fromTo(".foto", {
         transform: "scale(1.0)"
 
       },{
-        transform: "scale(3.5)",
+        transform: "scale(3.0)",
         transformOrigin: "100% 0"
         
       }).fromTo(".foto", {
         transform: "scale(1.0)"
 
       },{
-        transform: "scale(3.5)",
+        transform: "scale(3.0)",
         transformOrigin: "50% 50%"
         
       })
@@ -211,30 +210,29 @@ function Home(){
 
           <section data-aos="flip-left" id="left2" className="lefts left2">
           <div className="tecnologia">
-              <h1>DESIGN INDIVIDUAL</h1>
-              <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
+              <h1>DESENVOLVIMENTO LIMPO</h1>
+              <p>Todo o processo de desenvolvimento feito do zero, na melhor plataforma disponível: webflow. Estrutura limpa, animações e interações (tudo isso sem deixar seu site lento).</p>
             </div>
 
             <div className="tecnologiaImg">
-              <img src={figma} alt="" />
+              <img src={cod} alt="" />
             </div>
           </section>
 
           <section data-aos="flip-right" id="left3" className="lefts left3">
           <div className="tecnologia">
-              <h1>DESIGN INDIVIDUAL</h1>
-              <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
+              <h1>ACOMPANHAMENTO</h1>
+              <p>Eu posso tomar conta do seu site para você pelo tempo que você quiser! Seja para manutenção ou para criações novas, eu posso ser o braço de tecnologia que você precisa.</p>
             </div>
 
             <div className="tecnologiaImg">
-              <img src={figma} alt="" />
+              <img src={acompanhar} alt="" />
             </div>
           </section>
         </div>
 
         <div  className="rigth">
           <div ref={elemento2} className="foto">
-
           </div>
         </div>
       </section>

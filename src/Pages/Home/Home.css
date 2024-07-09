@@ -94,6 +94,8 @@ strong{
 
 .two{
   background-color: #1B1F2A;
+
+  height: 110vh;
   /* clip-path: circle(100% at 50% 5%); */
   clip-path: circle(5% at 50% 8.5%);
 
@@ -107,7 +109,6 @@ strong{
   align-items: center;
 
   overflow: hidden;
-
 }
 
 .card h1{
@@ -158,6 +159,8 @@ strong{
   display: flex;
   align-items: center;
   border-radius: 3vh;
+  padding: 3vh;
+  background-color: #1B1F2A;
 }
 .tecnologia{
   background-color: #78348A;
@@ -180,6 +183,7 @@ strong{
   right: 5vh;
   bottom: 10vh;
   width: 10vh;
+
 }
 .tecnologiaImg img{
   width: 100%;
@@ -203,17 +207,17 @@ strong{
 
   overflow: hidden;
   border-radius: 5vh 0 5vh 0 ;
-
 }
 .foto{
   width: 100%;
   height: 100%;
-  background-image: url("/src//assets/teste.png");
+  background-image: url("/src/assets/fundo.svg");
   background-position: center;
   background-size: cover;
   /* transform: scale(1.5); */
   transform-origin: 100% 0% ;
 
+  background-color: #301444;
 } 
 
 
