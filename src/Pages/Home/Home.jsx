@@ -14,9 +14,6 @@ import logod from "../../assets/logoD.png"
 import logoe from "../../assets/logoE.png"
 import seta from "../../assets/seta.png"
 
-import figma from "../../assets/figma.png"
-import cod from "../../assets/cod.png"
-import acompanhar from "../../assets/acompanhar.png"
 
 function Home(){
 //AOS
@@ -59,7 +56,7 @@ function Home(){
   
 
   return () => { //ao sair da pagina ele mata o processo de animação
-    gsap.killTweensOf(".model")
+    gsap.killTweensOf(".logos")
   }
 },[])
 
@@ -147,6 +144,39 @@ function Home(){
     }
   },[])
 
+
+  const elemento4 = useRef()
+  const timiline4 = useRef()
+
+   //-----------------------------------
+ useLayoutEffect( () => { //animações encadeadas
+  gsap.registerPlugin(ScrollTrigger)
+  const ctx = gsap.context( () =>{//criar timiline
+    timiline.current = gsap.timeline({
+        scrollTrigger:{
+          trigger: ".content",
+          scrub: true, //apegar no scroll
+          // markers: true,
+          start: "top 550vh",//ponto de inicio no scroll
+          end: "bottom 60vh"
+        }
+      })
+      .fromTo(".item",{ //primeira div
+        opacity: 1,
+        x: 0,
+      }, {
+        x: -450,
+      })
+  }, elemento )
+  
+
+  return () => { //ao sair da pagina ele mata o processo de animação
+    gsap.killTweensOf(".content")
+  }
+},[])
+
+
+
   return(
     <div className="preencher">
       <section className="section one">
@@ -196,38 +226,28 @@ function Home(){
       <section className="section tree">
 
         <div className="left">
-          <section data-aos="flip-right" id="left1" className="lefts left1">
+          <section id="left1" className="lefts left1">
             <div className="tecnologia">
-              <h1>DESIGN INDIVIDUAL</h1>
+              <h1>DESIGN <strong>INDIVIDUAL</strong> </h1>
               <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
             </div>
-
-            <div className="tecnologiaImg">
-              <img src={figma} alt="" />
-            </div>
-
           </section>
 
-          <section data-aos="flip-left" id="left2" className="lefts left2">
+          <section  id="left2" className="lefts left2">
           <div className="tecnologia">
-              <h1>DESENVOLVIMENTO LIMPO</h1>
+              <h1>DESENVOLVIMENTO <strong>LIMPO</strong> </h1>
               <p>Todo o processo de desenvolvimento feito do zero, na melhor plataforma disponível: webflow. Estrutura limpa, animações e interações (tudo isso sem deixar seu site lento).</p>
             </div>
 
-            <div className="tecnologiaImg">
-              <img src={cod} alt="" />
-            </div>
+           
           </section>
 
-          <section data-aos="flip-right" id="left3" className="lefts left3">
+          <section  id="left3" className="lefts left3">
           <div className="tecnologia">
-              <h1>ACOMPANHAMENTO</h1>
+              <h1><strong>ACOMPANHAMENTO</strong> </h1>
               <p>Eu posso tomar conta do seu site para você pelo tempo que você quiser! Seja para manutenção ou para criações novas, eu posso ser o braço de tecnologia que você precisa.</p>
             </div>
 
-            <div className="tecnologiaImg">
-              <img src={acompanhar} alt="" />
-            </div>
           </section>
         </div>
 
@@ -237,10 +257,27 @@ function Home(){
         </div>
       </section>
 
-
-
-
+            
       
+      <section className="portifolio">
+        <div className="content">
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
+        </div>
+       
+        <div className="content">
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
+        </div>
+
+        <div className="content">
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
+          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
+        </div>
+      </section>
 
     </div>
   )

@@ -43,7 +43,7 @@
   font-size: 3vh;
 }
 strong{
-  color: #78348A;
+  color: #990cbd;
 }
 @keyframes float{
 	0%,100%{
@@ -94,13 +94,15 @@ strong{
 
 .two{
   background-color: #1B1F2A;
-
+  background-image: url(/src/assets/textura2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 110vh;
   /* clip-path: circle(100% at 50% 5%); */
   clip-path: circle(5% at 50% 8.5%);
 
 
-  position: sticky;
   top: 0;
 
   display: flex;
@@ -134,18 +136,15 @@ strong{
 }
 
 
-
-
 /* ------------------ */
 /* zoom */
 .tree{
   display: flex;
-  height: auto;
   justify-content: space-around;
   background-color: #1B1F2A;
   position: sticky;
   top: 0;
-
+  height: auto;
   padding: 4vh 0;
 }
 .left{
@@ -160,13 +159,22 @@ strong{
   align-items: center;
   border-radius: 3vh;
   padding: 3vh;
-  background-color: #1B1F2A;
+  /* background-color: #1B1F2A; */
+  background-image: url("/src/assets/back2.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+
 .tecnologia{
-  background-color: #78348A;
   padding: 3vh;
   border-radius: 2vh;
-}
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
 .tecnologia h1{
   color: #ffff;
   font-size: 5vh;
@@ -178,18 +186,8 @@ strong{
   color: #D9D9D9;
 
 }
-.tecnologiaImg{
-  position: absolute;
-  right: 5vh;
-  bottom: 10vh;
-  width: 10vh;
 
-}
-.tecnologiaImg img{
-  width: 100%;
-}
-
-/* .left1{
+.left1{
   background-color: #212633;
 }
 .left2{
@@ -197,7 +195,7 @@ strong{
 }
 .left3{
   background-color: #2f3649;
-} */
+}
 .rigth{
 
   width: 40%;
@@ -205,21 +203,66 @@ strong{
   position: sticky;
   top: 0;
 
+  background-color: #130118;
+  background-image: url("/src/assets/back1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 5vh 0 5vh 0 ;
+
 }
 .foto{
   width: 100%;
   height: 100%;
+
   background-image: url("/src/assets/fundo.svg");
   background-position: center;
   background-size: cover;
   /* transform: scale(1.5); */
   transform-origin: 100% 0% ;
 
-  background-color: #301444;
 } 
 
+
+.portifolio{
+  position: absolute;
+
+  display: flex;
+
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden;
+
+}
+.content {
+  flex-shrink: 0;
+  display: flex;
+  overflow: hidden;
+
+}
+.item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20vh;
+  height: 20vh;
+
+}
+.teste{
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden;
+}
+.teste2{
+  display: flex;
+  background-color: blue;
+}
 
 
 
