@@ -226,13 +226,9 @@ strong{
 
 
 .portifolio{
-  position: absolute;
 
   display: flex;
 
-  background-color: red;
-  width: 100%;
-  height: 100vh;
   margin: auto;
   overflow-x: hidden;
 
@@ -246,25 +242,83 @@ strong{
 .item {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  width: 20vh;
-  height: 20vh;
+  background-size: contain;
+  width: 40vh;
+  height: 40vh;
 
 }
-.teste{
-  background-color: red;
+
+.four{
   position: absolute;
+  background-color: #ffff;
+  height: auto;
   width: 100%;
-  height: 100vh;
-  margin: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-.teste2{
+
+
+
+/* Efeito Imagens passar do lado */
+.imgPortifolio {
   display: flex;
-  background-color: blue;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2vh;
+  padding: 1vh;
+
+  
+}
+.imgPortifolio div{
+  height: 85vh;
+  margin-bottom: 3vh;
+   background: linear-gradient(to right, #990cbd, #5b1a6b);
+
+  padding: 1vh;
+  border-radius: 2vh;
+}
+.imgPortifolio img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2vh;
+
+}
+
+.sobre{
+  background-color: #1B1F2A;
+  width: 100%;
+  color: #ffff;
+}
+.sobreImg{
+  position: absolute;
+  right: 0;
+  width: 60vh;
+  opacity: 0.1;
+  padding: 5vh 5vh 5vh 5vh;
+}
+.sobreImg img{
+  width: 100%;
 }
 
 
+.sobreDentro{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 0;
+}
+.dentroImg{
+  width: 50vh;
+  height: 50vh;
+  background-color: red;
+  margin-right: 5vh;
+}
+.dentroTexto{
+  width: 50%;
+}
+.dentroTexto h1{
+  font-size: 6vh;
+}
 
 @media screen and (max-width: 767px){
   .apresentacao{
@@ -316,4 +370,13 @@ strong{
     flex-direction: column;
 
   }
+  .item {
+    width: 20vh;
+    height: 20vh;
+  
+  }
+  .imgPortifolio img{
+    width: 90%;
+  }
+  
 }

@@ -13,7 +13,9 @@ import "./Home.css"
 import logod from "../../assets/logoD.png"
 import logoe from "../../assets/logoE.png"
 import seta from "../../assets/seta.png"
-
+import portifolio1 from "../../assets/portifolio1.png"
+import portifolio2 from "../../assets/portifolio2.png"
+import sobre from "../../assets/sobre.png"
 
 function Home(){
 //AOS
@@ -148,26 +150,25 @@ function Home(){
   const elemento4 = useRef()
   const timiline4 = useRef()
 
-   //-----------------------------------
+  // Efeito Imagens passar do lado
  useLayoutEffect( () => { //animações encadeadas
-  gsap.registerPlugin(ScrollTrigger)
-  const ctx = gsap.context( () =>{//criar timiline
-    timiline.current = gsap.timeline({
+  const passar = gsap.context( () =>{//criar timiline
+    timiline4.current = gsap.timeline({
         scrollTrigger:{
           trigger: ".content",
           scrub: true, //apegar no scroll
           // markers: true,
-          start: "top 550vh",//ponto de inicio no scroll
-          end: "bottom 60vh"
+          start: "top 650vh",//ponto de inicio no scroll
+          end: "bottom 160vh"
         }
       })
-      .fromTo(".item",{ //primeira div
+      .fromTo(".content",{ //primeira div
         opacity: 1,
         x: 0,
       }, {
-        x: -450,
+        x: -950,
       })
-  }, elemento )
+  }, elemento4 )
   
 
   return () => { //ao sair da pagina ele mata o processo de animação
@@ -175,6 +176,36 @@ function Home(){
   }
 },[])
 
+  
+const containerRef = useRef(null);
+
+useLayoutEffect(() => {
+  let proxy = { skew: 0 };
+  const skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg");
+  const clamp = gsap.utils.clamp(-20, 20);
+
+  ScrollTrigger.create({
+    onUpdate: (self) => {
+      let skew = clamp(self.getVelocity() / -300);
+      if (Math.abs(skew) > Math.abs(proxy.skew)) {
+        proxy.skew = skew;
+        gsap.to(proxy, {
+          skew: 0,
+          duration: 0.8,
+          ease: "power3",
+          overwrite: true,
+          onUpdate: () => skewSetter(proxy.skew)
+        });
+      }
+    }
+  });
+
+  gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+
+  return () => {
+    ScrollTrigger.killAll();
+  };
+}, []);
 
 
   return(
@@ -259,25 +290,90 @@ function Home(){
 
             
       
-      <section className="portifolio">
-        <div className="content">
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
-        </div>
-       
-        <div className="content">
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
+      <section className="four">
+        <div ref={elemento4} className="portifolio">
+
+          <div className="content">
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+          </div>
+        
+          <div className="content">
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+          </div>
+
+          <div className="content">
+            <div className="item" style={{backgroundImage:`url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+          </div>
+
+          <div className="content">
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+          </div>
+
+          <div className="content">
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage:`url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+          </div>
+
+          <div className="content">
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio1}")`}}></div>
+            <div className="item" style={{backgroundImage: `url("${portifolio2}")`}}></div>
+          </div>
         </div>
 
-        <div className="content">
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/400')"}}>teste6</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/300/300')"}}>teste5</div>
-          <div class="item" style={{backgroundImage: "url('https://picsum.photos/400/300')"}}>teste4</div>
+
+        <div>
+            <div className="imgPortifolio" ref={containerRef}>
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <div className="skewElem"> 
+                    <img
+                      key={index}
+                      
+                      src={`https://picsum.photos/600/600?random=${index + 1}`}
+                      alt=""
+                    />
+                </div>
+                ))}
+              
         </div>
+
+        <div className="sobre">
+              
+            <div className="sobreImg">
+                <img src={sobre} alt="" />
+            </div>  
+
+            <div className="sobreDentro"> 
+                  <div className="dentroImg">
+
+                  </div>
+
+                  <div className="dentroTexto">
+                      <h1>Muito prazer, sou Fulano</h1>
+                      <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo!
+
+Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas.
+
+Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
+                  </div>
+            </div>
+        </div>
+
+        </div>
+
+
       </section>
+
+
 
     </div>
   )
