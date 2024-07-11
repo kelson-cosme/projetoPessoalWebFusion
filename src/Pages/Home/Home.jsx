@@ -359,11 +359,7 @@ useLayoutEffect(() => {
 
                   <div className="dentroTexto">
                       <h1>Muito prazer, sou Fulano</h1>
-                      <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo!
-
-Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas.
-
-Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
+                      <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo! Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas. Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
                   </div>
             </div>
         </div>
