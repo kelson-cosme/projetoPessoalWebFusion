@@ -1,6 +1,7 @@
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useRef, useLayoutEffect, useEffect } from "react"
+import { Link } from "react-router-dom";
 
 // Efeitos sumir
 import AOS from 'aos';
@@ -16,6 +17,7 @@ import seta from "../../assets/seta.png"
 import portifolio1 from "../../assets/portifolio1.png"
 import portifolio2 from "../../assets/portifolio2.png"
 import sobre from "../../assets/sobre.png"
+import logo from "../../assets/logo.png"
 
 function Home(){
 //AOS
@@ -353,16 +355,45 @@ useLayoutEffect(() => {
             </div>  
 
             <div className="sobreDentro"> 
-                  <div className="dentroImg">
+                  <div className="logo2">
+                    <div className="dentroImg">
+                      <img src={logo} alt="" />
+                    </div>
+                    {/* <h1>Web <strong>Fusion</strong> </h1> */}
 
                   </div>
 
                   <div className="dentroTexto">
-                      <h1>Muito prazer, sou Fulano</h1>
+                      <h1>Muito prazer, somos a <strong>Web Fusion</strong></h1>
                       <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo! Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas. Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
                   </div>
             </div>
+
+            <div className="chamada">
+              <h1>CHEGOU A HORA DE VOCÊ TER UM <br />
+              <strong>SITE PROFISSIONAL </strong>
+            </h1>
+            </div>
+
+            <div className="desafio">
+                <h3>ABERTO PARA DESAFIOS</h3>
+                <h2>O que vamos construir juntos?</h2>
+
+                <div className="desafioSeta">
+                  <img src={seta} alt="" />
+                </div>
+            </div>
+
+                <div className="zap">
+                  <h1><Link to={"whatsapp.com"}>MANDA UM ZAP</Link> </h1>
+                </div>
         </div>
+
+
+          <footer>
+            <p><strong>Web Fusion</strong>  © All Rights Reserved.</p>
+             
+          </footer>
 
         </div>
 
