@@ -285,6 +285,10 @@ strong{
 
 .sobre{
   background-color: #1B1F2A;
+  background-image: url("/src/assets/back3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
   color: #ffff;
 }
