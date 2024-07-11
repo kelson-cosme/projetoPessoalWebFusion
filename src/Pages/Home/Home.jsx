@@ -259,14 +259,14 @@ useLayoutEffect(() => {
       <section className="section tree">
 
         <div className="left">
-          <section id="left1" className="lefts left1">
-            <div className="tecnologia">
+          <section data-aos="fade-right" id="left1" className="lefts left1">
+            <div  className="tecnologia">
               <h1>DESIGN <strong>INDIVIDUAL</strong> </h1>
               <p>Nem precisa se preocupar, aqui não teremos nada de templates. Você vai receber um design personalizado seguindo sua identidade visual. Se ainda não tiver uma, nós criamos juntos.</p>
             </div>
           </section>
 
-          <section  id="left2" className="lefts left2">
+          <section data-aos="fade-right" id="left2" className="lefts left2">
           <div className="tecnologia">
               <h1>DESENVOLVIMENTO <strong>LIMPO</strong> </h1>
               <p>Todo o processo de desenvolvimento feito do zero, na melhor plataforma disponível: webflow. Estrutura limpa, animações e interações (tudo isso sem deixar seu site lento).</p>
@@ -275,7 +275,7 @@ useLayoutEffect(() => {
            
           </section>
 
-          <section  id="left3" className="lefts left3">
+          <section data-aos="fade-right"  id="left3" className="lefts left3">
           <div className="tecnologia">
               <h1><strong>ACOMPANHAMENTO</strong> </h1>
               <p>Eu posso tomar conta do seu site para você pelo tempo que você quiser! Seja para manutenção ou para criações novas, eu posso ser o braço de tecnologia que você precisa.</p>
@@ -356,20 +356,20 @@ useLayoutEffect(() => {
 
             <div className="sobreDentro"> 
                   <div className="logo2">
-                    <div className="dentroImg">
+                    <div data-aos="fade-right" className="dentroImg">
                       <img src={logo} alt="" />
                     </div>
                     {/* <h1>Web <strong>Fusion</strong> </h1> */}
 
                   </div>
 
-                  <div className="dentroTexto">
+                  <div data-aos="fade-left" className="dentroTexto">
                       <h1>Muito prazer, somos a <strong>Web Fusion</strong></h1>
                       <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo! Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas. Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
                   </div>
             </div>
 
-            <div className="chamada">
+            <div data-aos="zoom-in-up" className="chamada">
               <h1>CHEGOU A HORA DE VOCÊ TER UM <br />
               <strong>SITE PROFISSIONAL </strong>
             </h1>
@@ -384,19 +384,17 @@ useLayoutEffect(() => {
                 </div>
             </div>
 
-                <div className="zap">
+                <div data-aos="zoom-in-up" className="zap">
                   <h1><Link to={"whatsapp.com"}>MANDA UM ZAP</Link> </h1>
                 </div>
         </div>
 
 
           <footer>
-            <p><strong>Web Fusion</strong>  © All Rights Reserved.</p>
-             
+            <p>Web <strong>Fusion</strong>  © All Rights Reserved.</p>
           </footer>
 
         </div>
-
 
       </section>
 
