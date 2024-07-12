@@ -371,7 +371,9 @@ useLayoutEffect(() => {
 
                   <div data-aos="fade-left" className="dentroTexto">
                       <h1>Muito prazer, somos a <strong>Web Fusion</strong></h1>
-                      <p>Eu sou um cara apaixonado por marketing, com a missão de ajudar pessoas e empresas que querem deixar sua marca 🚀 no mundo! Tenho no currículo um diploma em engenharia civil e, depois de fazer uma migração de carreira para o marketing, consegui unir as habilidades dos 2 mundos 🦾 para mostrar para o mercado que design e performance podem e devem andar de mãos dadas. Conheci há 3 anos o mundo do web design e me tornei especialista em desenvolvimento pelo webflow - a melhor plataforma disponível hoje no mercado.</p>
+
+                      <p>Somos especializados na criação de landing pages que transformam visitantes em clientes. Nossa missão é impulsionar o sucesso online dos nossos clientes, proporcionando experiências digitais envolventes e eficazes.
+                       Acreditamos que a primeira impressão é crucial. É por isso que nos dedicamos a criar páginas que sejam não apenas esteticamente agradáveis, mas também otimizadas para conversão, carregamento rápido e navegação intuitiva. Seja para uma campanha de marketing, lançamento de produto ou qualquer outra necessidade específica, nossas landing pages são projetadas para maximizar seu impacto.</p>
                   </div>
             </div>
 

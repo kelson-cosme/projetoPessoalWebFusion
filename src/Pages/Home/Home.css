@@ -339,6 +339,10 @@ background: linear-gradient(180deg, rgba(27,31,42,1) 0%, rgba(59,22,78,1) 47%, r
 .dentroTexto h1{
   font-size: 6vh;
 }
+.dentroTexto p{
+  font-style: italic;
+  text-align: justify;
+}
 
 
 
