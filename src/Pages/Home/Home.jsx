@@ -216,10 +216,10 @@ useLayoutEffect(() => {
   return(
     <div className="preencher">
       <section className="section one">
-        <div  className="apresentacao">
+        <header  className="apresentacao">
           <h1 >Bem Vindo a <strong>Web Fusion</strong> </h1>
           <p >e prepare-se para ver um novo conceito de site moderno !</p>
-        </div>
+        </header>
   
         <div ref={elemento3} className="logo">
           <div  className="logos">
@@ -259,9 +259,9 @@ useLayoutEffect(() => {
         </div>
       </section>
 
-      <section className="section tree">
+      <main className="section tree">
 
-        <div className="left">
+        <article className="left">
           <section data-aos="fade-right" id="left1" className="lefts left1">
             <div  className="tecnologia">
               <h1>DESIGN <strong>INDIVIDUAL</strong> </h1>
@@ -285,13 +285,13 @@ useLayoutEffect(() => {
             </div>
 
           </section>
-        </div>
+        </article>
 
-        <div  className="rigth">
+        <aside  className="rigth">
           <div ref={elemento2} className="foto">
           </div>
-        </div>
-      </section>
+        </aside>
+      </main>
 
             
       
