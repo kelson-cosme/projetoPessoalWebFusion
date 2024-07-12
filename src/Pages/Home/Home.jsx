@@ -18,6 +18,9 @@ import portifolio1 from "../../assets/portifolio1.png"
 import portifolio2 from "../../assets/portifolio2.png"
 import sobre from "../../assets/sobre.png"
 import logo from "../../assets/logo.png"
+import projeto1 from "../../assets/projeto1.jpg"
+import projeto2 from "../../assets/projeto2.jpg"
+
 
 function Home(){
 //AOS
@@ -335,18 +338,21 @@ useLayoutEffect(() => {
 
         <div>
             <div className="imgPortifolio" ref={containerRef}>
-                {Array.from({ length: 4 }).map((_, index) => (
-                  <div className="skewElem"> 
-                    <img
-                      key={index}
-                      
-                      src={`https://picsum.photos/600/600?random=${index + 1}`}
-                      alt=""
-                    />
-                </div>
-                ))}
+              <div className="skewElem"> 
+                <img
+                  src={projeto1}
+                  alt=""
+                />
+              </div>
+
+              <div className="skewElem"> 
+                <img
+                  src={projeto2}
+                  alt=""
+                />
+              </div>
               
-        </div>
+            </div>
 
         <div className="sobre">
               

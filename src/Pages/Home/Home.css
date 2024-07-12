@@ -94,7 +94,10 @@ strong{
 
 .two{
   background-color: #1B1F2A;
-  background-image: url(/src/assets/textura2.png);
+  /* background-image: url(/src/assets/textura2.png); */
+
+  background: rgb(27,31,42);
+background: linear-gradient(180deg, rgba(27,31,42,1) 0%, rgba(59,22,78,1) 47%, rgba(27,31,42,1) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -268,7 +271,7 @@ strong{
   
 }
 .imgPortifolio div{
-  width: 40%;
+  width: 30%;
   height: 85vh;
   margin-bottom: 3vh;
    background: linear-gradient(to right, #990cbd, #5b1a6b);
@@ -284,8 +287,9 @@ strong{
 }
 
 .sobre{
-  background-color: #1B1F2A;
-  background-image: url("/src/assets/back3.png");
+  background: rgb(59,22,78);
+  background: radial-gradient(circle, rgba(59,22,78,1) 1%, rgba(27,31,42,1) 61%);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
