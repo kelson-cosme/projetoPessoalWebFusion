@@ -383,7 +383,7 @@ useLayoutEffect(() => {
 
             <div className="desafio">
                 <h3>ABERTO PARA DESAFIOS</h3>
-                <h2>O que vamos construir juntos?</h2>
+                <h4>O que vamos construir juntos?</h4>
 
                 <div className="desafioSeta">
                   <img src={seta} alt="" />
@@ -397,7 +397,7 @@ useLayoutEffect(() => {
 
 
           <footer>
-            <p>Web <strong>Fusion</strong>  © All Rights Reserved.</p>
+            <p>Web Fusion  © All Rights Reserved.</p>
           </footer>
 
         </div>
