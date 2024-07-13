@@ -281,7 +281,7 @@ useLayoutEffect(() => {
           <section data-aos="fade-right"  id="left3" className="lefts left3">
           <div className="tecnologia">
               <h1><strong>ACOMPANHAMENTO</strong> </h1>
-              <p>Eu posso tomar conta do seu site para você pelo tempo que você quiser! Seja para manutenção ou para criações novas, eu posso ser o braço de tecnologia que você precisa.</p>
+              <p>Podemos tomar conta do seu site para você pelo tempo que você quiser! Seja para manutenção ou para criações novas, eu posso ser o braço de tecnologia que você precisa.</p>
             </div>
 
           </section>

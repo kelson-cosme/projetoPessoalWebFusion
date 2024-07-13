@@ -205,9 +205,8 @@ background: linear-gradient(180deg, rgba(27,31,42,1) 0%, rgba(59,22,78,1) 47%, r
   position: sticky;
   top: 0;
 
-  background-color: #130118;
   background-image: url("/src/assets/back1.png");
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -218,6 +217,7 @@ background: linear-gradient(180deg, rgba(27,31,42,1) 0%, rgba(59,22,78,1) 47%, r
   width: 100%;
   height: 100%;
 
+  /* background-image: url("/src/assets/fundo.svg"); */
   background-image: url("/src/assets/fundo.svg");
   background-position: center;
   background-size: cover;
