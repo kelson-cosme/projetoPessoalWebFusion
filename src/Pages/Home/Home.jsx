@@ -171,7 +171,7 @@ function Home(){
         opacity: 1,
         x: 0,
       }, {
-        x: -950,
+        x: -1250,
       })
   }, elemento4 )
   
